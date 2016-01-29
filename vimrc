@@ -4,8 +4,6 @@ set scrolloff=3     " 光标移动到buffer的顶部和底部时保持3行距离
 set novisualbell    " 不要闪烁(不明白)  
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\
 set laststatus=1    " 启动显示状态行(1),总是显示状态行(2)  
-set foldenable      " 允许折叠  
-set foldmethod=manual   " 手动折叠  
 set termencoding=utf-8
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936
@@ -15,10 +13,6 @@ nmap <leader>f :find<cr>
 map <C-A> ggVGY
 map! <C-A> <Esc>ggVGY
 map <F12> gg=G
-"去空行  
-nnoremap <F2> :g/^\s*$/d<CR> 
-"比较文件  
-nnoremap <C-F2> :vert diffsplit 
 "新建标签  
 map <M-F2> :tabnew<CR>  
 "列出当前目录文件  
@@ -40,14 +34,13 @@ map <C-F3> \be
  "自动保存
  set autowrite
  set ruler                   " 打开状态栏标尺
- set cursorline              " 突出显示当前行
  set magic                   " 设置魔术
 
  " 设置在状态行显示的信息
 
  set foldcolumn=0
- set foldmethod=indent 
- set foldlevel=3 
+ set foldmethod=indent
+ set foldlevel=1
  set foldenable              " 开始折叠
 
  " 不要使用vi的键盘模式，而是vim自己的
