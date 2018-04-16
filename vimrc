@@ -47,7 +47,7 @@ map <C-F3> \be
  set nocompatible
 
  " 语法高亮
- set syntax=on
+ syntax on
 
  " 去掉输入错误的提示声音
  set noeb
