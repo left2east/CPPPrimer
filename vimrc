@@ -36,13 +36,6 @@ map <C-F3> \be
  set ruler                   " 打开状态栏标尺
  set magic                   " 设置魔术
 
- " 设置在状态行显示的信息
-
- set foldcolumn=0
- set foldmethod=indent
- set foldlevel=1
- set foldenable              " 开始折叠
-
  " 不要使用vi的键盘模式，而是vim自己的
  set nocompatible
 
